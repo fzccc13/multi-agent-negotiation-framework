@@ -15,9 +15,11 @@ Under a fixed logical LLM-call cap, does the negotiation workflow improve Ascend
 ## Compared modes
 
 - `baseline`: one selected model generates a solution and repairs it from compiler/runtime feedback.
-- `K=N`: five logical roles use full-consensus topology; all roles call the same selected model in this ablation.
-- `K=1`: single-expert monitoring topology with the same model behind every role.
-- `K=2`: dual-expert monitoring topology with the same model behind every role.
+- `K=N`: the protocol enters the Best-1 endgame immediately because the alive-candidate count is already at the threshold.
+- `K=1`: Top-K elimination continues until one candidate remains or a candidate crosses the winner threshold.
+- `K=2`: Top-K elimination continues until two candidates remain, then switches to the Best-1 endgame.
+
+`K` is a phase-transition threshold, not the number of participating Agents. All five logical roles participate at initialization in every negotiation configuration.
 
 This homogeneous setup isolates workflow effects better than mixing GLM, Qwen, and Kimi. A separate heterogeneous-system experiment may measure the best practical configuration, but must not be interpreted as a pure protocol ablation.
 
