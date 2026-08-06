@@ -1,0 +1,5458 @@
+[
+  {
+    "name": "ascend_add",
+    "category": "math",
+    "difficulty": 0,
+    "description": "Element-wise addition: y = x1 + x2",
+    "source": "desktop-5-ops",
+    "has_test": true
+  },
+  {
+    "name": "ascend_relu",
+    "category": "activation",
+    "difficulty": 0,
+    "description": "Element-wise ReLU: y = max(0, x)",
+    "source": "desktop-5-ops",
+    "has_test": true
+  },
+  {
+    "name": "ascend_sigmoid",
+    "category": "activation",
+    "difficulty": 1,
+    "description": "Element-wise Sigmoid: y = 1/(1+e^(-x))",
+    "source": "desktop-5-ops",
+    "has_test": true
+  },
+  {
+    "name": "ascend_fmod",
+    "category": "math",
+    "difficulty": 1,
+    "description": "Floating-point modulo: y = x1 - floor(x1/x2)*x2",
+    "source": "desktop-5-ops",
+    "has_test": true
+  },
+  {
+    "name": "ascend_asinh",
+    "category": "math",
+    "difficulty": 1,
+    "description": "Inverse hyperbolic sine: y = asinh(x)",
+    "source": "desktop-5-ops",
+    "has_test": true
+  },
+  {
+    "name": "cann_abs",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                              | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_accumulate_nv2",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                              | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_acos",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_acos_grad",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_acosh",
+    "category": "math",
+    "difficulty": 0,
+    "description": "> 反双曲余弦（Inverse Hyperbolic Cosine）算子，对应PyTorch `torch.acosh` / `torch.acosh_`。",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_acosh_grad",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_add_lora",
+    "category": "math",
+    "difficulty": 0,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_add_mat_mat_elements",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_add_n",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_addcdiv",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_addcmul",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_addr",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_adds",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_adjacent_difference",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_amp_update_scale",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_angle_v2",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_approximate_equal",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_arg_max_v2",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_arg_max_with_value",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_arg_min",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_arg_min_with_value",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_asin",
+    "category": "math",
+    "difficulty": 0,
+    "description": "本目录仅包含Asin算子对应的aclnn接口；如您想要贡献该算子的AscendC实现，请参考[贡献流程](../../CONTRIBUTING.md)。",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_asin_grad",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_asinh",
+    "category": "math",
+    "difficulty": 0,
+    "description": "> 反双曲正弦（Inverse Hyperbolic Sine）算子，对应PyTorch `torch.asinh` / `torch.asinh_`。",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_asinh_grad",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_assign_add",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_assign_sub",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_atan",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_atan2",
+    "category": "math",
+    "difficulty": 0,
+    "description": "本目录仅包含Atan2算子对应的aclnn接口；如您想要贡献该算子的AscendC实现，请参考[贡献流程](../../CONTRIBUTING.md)。",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_atan_grad",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_atanh",
+    "category": "math",
+    "difficulty": 0,
+    "description": "<!--",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_axpy",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                            | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_axpy_v2",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                           | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_bessel_i0e",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                              | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_bias_add",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_bias_add_grad",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_bincount",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_bitwise_and",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_bitwise_or",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_bitwise_xor",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_cast",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_cdist",
+    "category": "math",
+    "difficulty": 0,
+    "description": "本目录仅包含Cdist算子对应的aclnn接口；如您想要贡献该算子的AscendC实现，请参考[贡献流程](../../CONTRIBUTING.md)。",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_cdist_grad",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_ceil",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_cholesky",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_complex",
+    "category": "math",
+    "difficulty": 0,
+    "description": "本目录仅包含Complex算子对应的aclnn接口；如您想要贡献该算子的AscendC实现，请参考[贡献流程](../../CONTRIBUTING.md)。",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_cos",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_cosh",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_cosine_similarity",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_cross",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         |  是否支持   |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_cummin",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_cumsum",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_data_compare",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_dawsn",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                              | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_diag_part",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_div",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_div_no_nan",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_dot",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_eltwise",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_equal",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_erf",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                              | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_exp",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_exp_segsum_grad",
+    "category": "math",
+    "difficulty": 0,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_expand",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_expm1",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                              | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_eye",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_floor",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_floor_div",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_floor_mod",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_fresnel_cos",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                              | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_fresnel_sin",
+    "category": "math",
+    "difficulty": 0,
+    "description": "fresnel_sin",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_fused_mul_add",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_fused_mul_add_add",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_fused_mul_add_n",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_gcd",
+    "category": "math",
+    "difficulty": 0,
+    "description": "本目录仅包含Gcd算子对应的aclnn接口；如您想要贡献该算子的AscendC实现，请参考[贡献流程](../../CONTRIBUTING.md)。",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_ger",
+    "category": "math",
+    "difficulty": 0,
+    "description": "本目录仅包含Ger算子对应的aclnn接口；如您想要贡献该算子的AscendC实现，请参考[贡献流程](../../CONTRIBUTING.md)。",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_greater",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_greater_equal",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_grouped_bias_add_grad",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_hans_decode",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_hans_encode",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_histogram_v2",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_inv",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_inv_grad",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_invert",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_is_close",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_is_finite",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_is_inf",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_is_nan",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_is_neg_inf",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_is_pos_inf",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_kl_div_v2",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_kth_value",
+    "category": "math",
+    "difficulty": 0,
+    "description": "kth_value",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_lerp",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_less",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_less_equal",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_lin_space",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_log",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_log1p",
+    "category": "math",
+    "difficulty": 0,
+    "description": "[📄 查看源码](https://gitcode.com/cann/ops-math/tree/master/math/log1p)",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_log_add_exp",
+    "category": "math",
+    "difficulty": 0,
+    "description": "本目录仅包含LogAddExp算子对应的aclnn接口；如您想要贡献该算子的AscendC实现，请参考[贡献流程](../../CONTRIBUTING.md)。",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_logical_and",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_logical_not",
+    "category": "math",
+    "difficulty": 0,
+    "description": "本目录仅包含LogicalNot算子对应的aclnn接口；如您想要贡献该算子的AscendC实现，请参考[贡献流程](../../CONTRIBUTING.md)。",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_logical_or",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_masked_scale",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_maximum",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_minimum",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_mod",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_mul",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_mul_addn",
+    "category": "math",
+    "difficulty": 0,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_mul_no_nan",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_muls",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_nan_to_num",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_ndtri",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                              | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_neg",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_non_finite_check",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_not_equal",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_one_hot",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_ones_like",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_polar",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                              | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_population_count",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_pow",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_power",
+    "category": "math",
+    "difficulty": 0,
+    "description": "逐元素计算：",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_pows",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_radix_top_k",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_range",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_real",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_real_div",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_reciprocal",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_reduce_all",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_reduce_any",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_reduce_log_sum",
+    "category": "math",
+    "difficulty": 0,
+    "description": "本目录仅包含ReduceLogSum算子对应的aclnn接口；如您想要贡献该算子的AscendC实现，请参考[贡献流程](../../CONTRIBUTING.md)。",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_reduce_log_sum_exp",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                                | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_reduce_max",
+    "category": "math",
+    "difficulty": 0,
+    "description": "本目录仅包含ReduceMax算子对应的aclnn接口；如您想要贡献该算子的AscendC实现，请参考[贡献流程](../../CONTRIBUTING.md)。",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_reduce_mean",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_reduce_mean_with_count",
+    "category": "math",
+    "difficulty": 0,
+    "description": "reduce_mean_with_count",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_reduce_min",
+    "category": "math",
+    "difficulty": 0,
+    "description": "本目录仅包含ReduceMin算子对应的aclnn接口；如您想要贡献该算子的AscendC实现，请参考[贡献流程](../../CONTRIBUTING.md)。",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_reduce_nansum",
+    "category": "math",
+    "difficulty": 0,
+    "description": "本目录仅包含ReduceNansum算子对应的aclnn接口；如您想要贡献该算子的AscendC实现，请参考[贡献流程](../../CONTRIBUTING.md)。",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_reduce_prod",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_reduce_std_v2",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_reduce_sum",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_reduce_var",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_rfft1_d",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_right_shift",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_rint",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品　　　　　　　　　　　　　　　　　　　　　　　　　　 | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_round",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_rsqrt",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_rsqrt_grad",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_scale",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_segsum",
+    "category": "math",
+    "difficulty": 0,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_select",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_select_v2",
+    "category": "math",
+    "difficulty": 0,
+    "description": "select_v2",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_sign",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_signbit",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_sin",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_sinc",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_sinh",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_sinkhorn",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_sort",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                              | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_sort_with_index",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_sparse_bincount",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_spence",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                              | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_sqrt",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_sqrt_grad",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_square",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_square_sum_v1",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                                | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_squared_difference",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_stft",
+    "category": "math",
+    "difficulty": 0,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_stride_add",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_sub",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_tan",
+    "category": "math",
+    "difficulty": 0,
+    "description": "本目录仅包含Tan算子对应的aclnn接口；如您想要贡献该算子的AscendC实现，请参考[贡献流程](../../CONTRIBUTING.md)。",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_tanh",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_tanh_grad",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_tensor_equal",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_tile",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_top_k_v2",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_trace",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_transform_bias_rescale_qkv",
+    "category": "math",
+    "difficulty": 0,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_trunc",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_truncate_div",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_truncate_mod",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_xdivy",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                              | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_xlog1py",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                              | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_xlogy",
+    "category": "math",
+    "difficulty": 0,
+    "description": "| 产品                                              | 是否支持 |",
+    "source": "cann-ops-math/math",
+    "has_test": false
+  },
+  {
+    "name": "cann_as_strided",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_assign",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_batch_to_space",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_batch_to_space_nd",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_broadcast_to",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "| 产品                                              | 是否支持 |",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_chunk_cat",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_circular_pad",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "| 产品                                              | 是否支持 |",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_circular_pad_grad",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "| 产品                                              | 是否支持 |",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_clip_by_norm_no_div_sum",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_coalesce_sparse",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "| 产品                                              | 是否支持 |",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_concat",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_concat_d",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_concat_dv2",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_concat_v2",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_confusion_transpose_d",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_depth_to_space",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_diag",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_diag_flat",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "| 产品                                              | 是否支持 |",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_diag_v2",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "| 产品                                              | 是否支持 |",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_dynamic_partition",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_dynamic_stitch",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "dynamic_stitch",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_feeds_repeat",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "| 产品                                              | 是否支持 |",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_fill",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_fill_diagonal_v2",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "| 产品                                              | 是否支持 |",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_fills",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_im2col",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_masked_fill",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_masked_select_v3",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_matrix_diag",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_matrix_set_diag",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_mem_set",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "mem_set",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_mem_set_v2",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_mirror_pad",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_pack",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_pad",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "本目录仅包含Pad算子对应的ACLNN接口；如您想要贡献该算子的AscendC实现，请参考[贡献流程](../../CONTRIBUTING.md)。",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_pad_v2",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_pad_v3",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_pad_v3_grad",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "| 产品                                              | 是否支持 |",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_pad_v3_grad_replicate",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "| 产品                                              | 是否支持 |",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_pad_v3_grad_replication",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "| 产品                                              | 是否支持 |",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_pad_v4_grad",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "| 产品                                              | 是否支持 |",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_reflection_pad3d_grad",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "| 产品                                              | 是否支持 |",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_roll",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "本目录仅包含Roll算子对应的ACLNN接口；如您想要贡献该算子的AscendC实现，请参考[贡献流程](../../CONTRIBUTING.md)。",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_slice",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_slice_last_dim",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "slice_last_dim",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_slice_with_axes",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "slice_with_axes",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_space_to_batch",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_space_to_batch_nd",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_space_to_depth",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_split",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "| 产品                                        | 是否支持 |",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_split_v",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_stack_ball_query",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_strided_slice",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_strided_slice_assign_v2",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "| 产品                                              | 是否支持 |",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_strided_slice_grad",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_strided_slice_v2",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_strided_slice_v3",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_tensor_move",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_tile_with_axis",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "tile_with_axis",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_trans_data",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "| 产品                                              | 是否支持 |",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_transpose",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "| 产品                                              | 是否支持 |",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_transpose_v2",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "| 产品                                              | 是否支持 |",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_tril",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_trilu",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_triu",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_unfold_grad",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "| 产品                                              | 是否支持 |",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_unpack",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_view_copy",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "本目录仅包含ViewCopy算子对应的aclnn接口；如您想要贡献该算子的AscendC实现，请参考[贡献流程](../../CONTRIBUTING.md)。",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_zeros_like",
+    "category": "conversion",
+    "difficulty": 1,
+    "description": "zeros_like",
+    "source": "cann-ops-math/conversion",
+    "has_test": false
+  },
+  {
+    "name": "cann_drop_out_do_mask",
+    "category": "random",
+    "difficulty": 1,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/random",
+    "has_test": false
+  },
+  {
+    "name": "cann_drop_out_do_mask_v3",
+    "category": "random",
+    "difficulty": 1,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/random",
+    "has_test": false
+  },
+  {
+    "name": "cann_drop_out_do_mask_v3_d",
+    "category": "random",
+    "difficulty": 1,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/random",
+    "has_test": false
+  },
+  {
+    "name": "cann_drop_out_v3",
+    "category": "random",
+    "difficulty": 1,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/random",
+    "has_test": false
+  },
+  {
+    "name": "cann_random_standard_normal_v2",
+    "category": "random",
+    "difficulty": 1,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/random",
+    "has_test": false
+  },
+  {
+    "name": "cann_random_uniform_int_v2",
+    "category": "random",
+    "difficulty": 1,
+    "description": "| 产品                                                               | 是否支持 |",
+    "source": "cann-ops-math/random",
+    "has_test": false
+  },
+  {
+    "name": "cann_random_uniform_v2",
+    "category": "random",
+    "difficulty": 1,
+    "description": "| 产品                                                               | 是否支持 |",
+    "source": "cann-ops-math/random",
+    "has_test": false
+  },
+  {
+    "name": "cann_sim_thread_exponential",
+    "category": "random",
+    "difficulty": 1,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/random",
+    "has_test": false
+  },
+  {
+    "name": "cann_stateless_bernoulli",
+    "category": "random",
+    "difficulty": 1,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/random",
+    "has_test": false
+  },
+  {
+    "name": "cann_stateless_drop_out_gen_mask",
+    "category": "random",
+    "difficulty": 1,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/random",
+    "has_test": false
+  },
+  {
+    "name": "cann_stateless_normal",
+    "category": "random",
+    "difficulty": 1,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/random",
+    "has_test": false
+  },
+  {
+    "name": "cann_stateless_random",
+    "category": "random",
+    "difficulty": 1,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/random",
+    "has_test": false
+  },
+  {
+    "name": "cann_stateless_random_choice_with_mask",
+    "category": "random",
+    "difficulty": 1,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/random",
+    "has_test": false
+  },
+  {
+    "name": "cann_stateless_random_normal_v2",
+    "category": "random",
+    "difficulty": 1,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/random",
+    "has_test": false
+  },
+  {
+    "name": "cann_stateless_random_normal_v3",
+    "category": "random",
+    "difficulty": 1,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/random",
+    "has_test": false
+  },
+  {
+    "name": "cann_stateless_random_uniform_v2",
+    "category": "random",
+    "difficulty": 1,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/random",
+    "has_test": false
+  },
+  {
+    "name": "cann_stateless_random_uniform_v3",
+    "category": "random",
+    "difficulty": 1,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/random",
+    "has_test": false
+  },
+  {
+    "name": "cann_stateless_randperm",
+    "category": "random",
+    "difficulty": 1,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/random",
+    "has_test": false
+  },
+  {
+    "name": "cann_stateless_sample_multinomial",
+    "category": "random",
+    "difficulty": 1,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/random",
+    "has_test": false
+  },
+  {
+    "name": "cann_stateless_truncated_normal_v2",
+    "category": "random",
+    "difficulty": 1,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/random",
+    "has_test": false
+  },
+  {
+    "name": "cann_stateless_uniform",
+    "category": "random",
+    "difficulty": 1,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/random",
+    "has_test": false
+  },
+  {
+    "name": "cann_truncated_normal_v2",
+    "category": "random",
+    "difficulty": 1,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-math/random",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_bnll",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_celu",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_celu_v2",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_clipped_swiglu",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_confusion_softmax_grad",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_elu",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_elu_grad",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "[📄 查看源码](https://gitcode.com/cann/ops-nn/tree/master/activation/elu_grad)",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_elu_grad_v2",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_erfinv",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "| 产品                                              | 是否支持 |",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_fast_gelu",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_fast_gelu_grad",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_fast_gelu_v2",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_fatrelu_mul",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_ge_glu_grad_v2",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_ge_glu_v2",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_gelu",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_gelu_grad",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_gelu_grad_v2",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "本目录仅包含GeluGradV2算子对应的aclnn接口；如您想要贡献该算子的AscendC实现，请参考[贡献流程](../../CONTRIBUTING.md)。",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_gelu_mul",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_gelu_quant",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_gelu_v2",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "本目录仅包含GeluV2算子对应的aclnn接口；如您想要贡献该算子的AscendC实现，请参考[贡献流程](../../CONTRIBUTING.md)。",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_glu",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_glu_grad",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_hard_shrink",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_hard_shrink_grad",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_hard_sigmoid_grad",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_hard_swish",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "本目录仅包含HardSwish算子对应的aclnn接口；如您想要贡献该算子的AscendC实现，请参考[贡献流程](../../CONTRIBUTING.md)。",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_hard_swish_grad",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_hard_swish_grad_v2",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_hardtanh_grad",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_heaviside",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_leaky_relu",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_leaky_relu_grad",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_log_sigmoid",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "本目录仅包含Logsigmoid算子对应的aclnn接口；如您想要贡献该算子的AscendC实现，请参考[贡献流程](../../CONTRIBUTING.md)。",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_log_softmax_grad",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "本目录仅包含LogsoftmaxGrad算子对应的aclnn接口；如您想要贡献该算子的AscendC实现，请参考[贡献流程](../../CONTRIBUTING.md)。",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_log_softmax_v2",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "本目录仅包含LogsoftmaxV2算子对应的aclnn接口；如您想要贡献该算子的AscendC实现，请参考[贡献流程](../../CONTRIBUTING.md)。",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_logsigmoid_grad",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_mish",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "| 产品                                              | 是否支持 |",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_mish_grad",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "本目录仅包含MishGrad算子对应的aclnn接口；如您想要贡献该算子的AscendC实现，请参考[贡献流程](../../CONTRIBUTING.md)。",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_p_relu",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "| 产品                                              | 是否支持 |",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_p_relu_grad_reduce",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_p_relu_grad_update",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_relu",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_relu6",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_relu6_grad",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_relu_grad",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_relu_grad_v2",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_relu_v2",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_selu",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_selu_grad",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_shrink",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_sigmoid",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_sigmoid_grad",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_silu_grad",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_softmax_cross_entropy_with_logits",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_softmax_grad",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_softmax_grad_ext",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "softmax_grad_ext",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_softmax_v2",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "| 产品                                           | 是否支持 |",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_softplus",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_softplus_v2",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "本目录仅包含SoftplusV2算子对应的aclnn接口；如您想要贡献该算子的AscendC实现，请参考[贡献流程](../../CONTRIBUTING.md)。",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_softshrink",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_softsign",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_softsign_grad",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_squared_relu",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_swi_glu",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_swi_glu_grad",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_swiglu_group",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_swiglu_group_quant",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_swiglu_group_quant_grad",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "| 产品                                                         |  是否支持   |",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_swish",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_swish_grad",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_threshold_grad_v2_d",
+    "category": "nn_activation",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/activation",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_conv2d_v2",
+    "category": "nn_conv",
+    "difficulty": 2,
+    "description": "<table>",
+    "source": "cann-ops-nn/conv",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_conv3d_backprop_filter_v2",
+    "category": "nn_conv",
+    "difficulty": 2,
+    "description": "| 产品                                                     | 是否支持 |",
+    "source": "cann-ops-nn/conv",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_conv3d_backprop_input_v2",
+    "category": "nn_conv",
+    "difficulty": 2,
+    "description": "| 产品                                                     | 是否支持 |",
+    "source": "cann-ops-nn/conv",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_conv3d_transpose_v2",
+    "category": "nn_conv",
+    "difficulty": 2,
+    "description": "| 产品                                                     | 是否支持 |",
+    "source": "cann-ops-nn/conv",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_conv3d_v2",
+    "category": "nn_conv",
+    "difficulty": 2,
+    "description": "<table>",
+    "source": "cann-ops-nn/conv",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_deformable_conv2d",
+    "category": "nn_conv",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/conv",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_deformable_offsets",
+    "category": "nn_conv",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/conv",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_deformable_offsets_grad",
+    "category": "nn_conv",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/conv",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_extend_conv2d",
+    "category": "nn_conv",
+    "difficulty": 2,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-nn/conv",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_extend_conv_transpose",
+    "category": "nn_conv",
+    "difficulty": 2,
+    "description": "| 产品                                                     | 是否支持 |",
+    "source": "cann-ops-nn/conv",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_quant_conv3d",
+    "category": "nn_conv",
+    "difficulty": 2,
+    "description": "<table>",
+    "source": "cann-ops-nn/conv",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_binary_cross_entropy",
+    "category": "nn_loss",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/loss",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_binary_cross_entropy_grad",
+    "category": "nn_loss",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/loss",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_chamfer_distance_grad",
+    "category": "nn_loss",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/loss",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_cross_entropy_loss",
+    "category": "nn_loss",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/loss",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_cross_entropy_loss_grad",
+    "category": "nn_loss",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/loss",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_cross_v2",
+    "category": "nn_loss",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/loss",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_ctc_loss_v2",
+    "category": "nn_loss",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/loss",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_ctc_loss_v2_grad",
+    "category": "nn_loss",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/loss",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_ctc_loss_v3",
+    "category": "nn_loss",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/loss",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_ctc_loss_v3_grad",
+    "category": "nn_loss",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/loss",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_fused_cross_entropy_loss_with_max_sum",
+    "category": "nn_loss",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/loss",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_kl_div_loss_grad",
+    "category": "nn_loss",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/loss",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_kl_div_target_loss_grad",
+    "category": "nn_loss",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/loss",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_l1_loss_grad",
+    "category": "nn_loss",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/loss",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_l2_loss",
+    "category": "nn_loss",
+    "difficulty": 2,
+    "description": "l2_loss",
+    "source": "cann-ops-nn/loss",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_logit",
+    "category": "nn_loss",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/loss",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_logit_grad",
+    "category": "nn_loss",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/loss",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_lp_loss",
+    "category": "nn_loss",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/loss",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_mse_loss",
+    "category": "nn_loss",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/loss",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_mse_loss_grad",
+    "category": "nn_loss",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/loss",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_mse_loss_grad_v2",
+    "category": "nn_loss",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/loss",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_mse_loss_v2",
+    "category": "nn_loss",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/loss",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_nll_loss",
+    "category": "nn_loss",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/loss",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_nll_loss_grad",
+    "category": "nn_loss",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/loss",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_sigmoid_cross_entropy_with_logits",
+    "category": "nn_loss",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/loss",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_sigmoid_cross_entropy_with_logits_grad_v2",
+    "category": "nn_loss",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/loss",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_sigmoid_cross_entropy_with_logits_v2",
+    "category": "nn_loss",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/loss",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_smooth_l1_loss_grad_v2",
+    "category": "nn_loss",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/loss",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_smooth_l1_loss_v2",
+    "category": "nn_loss",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/loss",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_soft_margin_loss",
+    "category": "nn_loss",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/loss",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_soft_margin_loss_grad",
+    "category": "nn_loss",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/loss",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_sparse_softmax_cross_entropy_with_logits",
+    "category": "nn_loss",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/loss",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_batch_mat_mul_v3",
+    "category": "nn_matmul",
+    "difficulty": 2,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-nn/matmul",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_fused_linear_cross_entropy_loss_grad",
+    "category": "nn_matmul",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/matmul",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_fused_linear_online_max_sum",
+    "category": "nn_matmul",
+    "difficulty": 2,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-nn/matmul",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_fused_mat_mul",
+    "category": "nn_matmul",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/matmul",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_fused_quant_mat_mul",
+    "category": "nn_matmul",
+    "difficulty": 2,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-nn/matmul",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_gemm_v2",
+    "category": "nn_matmul",
+    "difficulty": 2,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-nn/matmul",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_gemm_v3",
+    "category": "nn_matmul",
+    "difficulty": 2,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-nn/matmul",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_mat_mul_v3",
+    "category": "nn_matmul",
+    "difficulty": 2,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-nn/matmul",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_matmul_compress",
+    "category": "nn_matmul",
+    "difficulty": 2,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-nn/matmul",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_matmul_v2_compress_dequant",
+    "category": "nn_matmul",
+    "difficulty": 2,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-nn/matmul",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_quant_batch_matmul_v3",
+    "category": "nn_matmul",
+    "difficulty": 2,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-nn/matmul",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_quant_batch_matmul_v4",
+    "category": "nn_matmul",
+    "difficulty": 2,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-nn/matmul",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_quant_matmul_reduce_sum",
+    "category": "nn_matmul",
+    "difficulty": 2,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-nn/matmul",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_rotate_quant",
+    "category": "nn_matmul",
+    "difficulty": 2,
+    "description": "| 产品                                                     | 是否支持 |",
+    "source": "cann-ops-nn/matmul",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_sparse4to2quant_matmul",
+    "category": "nn_matmul",
+    "difficulty": 2,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-nn/matmul",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_transpose_batch_mat_mul",
+    "category": "nn_matmul",
+    "difficulty": 2,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-nn/matmul",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_weight_quant_batch_matmul_v2",
+    "category": "nn_matmul",
+    "difficulty": 2,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-nn/matmul",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_ada_layer_norm",
+    "category": "nn_norm",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/norm",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_ada_layer_norm_grad",
+    "category": "nn_norm",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/norm",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_ada_layer_norm_quant",
+    "category": "nn_norm",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/norm",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_ada_layer_norm_v2",
+    "category": "nn_norm",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/norm",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_add_layer_norm",
+    "category": "nn_norm",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/norm",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_add_layer_norm_grad",
+    "category": "nn_norm",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/norm",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_add_layer_norm_quant",
+    "category": "nn_norm",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/norm",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_add_layer_norm_quant_v2",
+    "category": "nn_norm",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/norm",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_add_rms_norm",
+    "category": "nn_norm",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/norm",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_add_rms_norm_cast",
+    "category": "nn_norm",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/norm",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_add_rms_norm_dynamic_mx_quant",
+    "category": "nn_norm",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/norm",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_add_rms_norm_dynamic_quant",
+    "category": "nn_norm",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/norm",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_add_rms_norm_dynamic_quant_v2",
+    "category": "nn_norm",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/norm",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_add_rms_norm_quant",
+    "category": "nn_norm",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/norm",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_add_rms_norm_quant_v2",
+    "category": "nn_norm",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/norm",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_batch_norm",
+    "category": "nn_norm",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/norm",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_batch_norm_grad",
+    "category": "nn_norm",
+    "difficulty": 2,
+    "description": "batch_norm_grad",
+    "source": "cann-ops-nn/norm",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_batch_norm_grad_v3",
+    "category": "nn_norm",
+    "difficulty": 2,
+    "description": "本目录仅包含BatchNormGradV3算子对应的aclnn接口；如您想要贡献该算子的AscendC实现，请参考[贡献流程](../../CONTRIBUTING.md)。",
+    "source": "cann-ops-nn/norm",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_batch_norm_v3",
+    "category": "nn_norm",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/norm",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_deep_norm",
+    "category": "nn_norm",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/norm",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_deep_norm_grad",
+    "category": "nn_norm",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/norm",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_dua_quantize_add_layer_norm",
+    "category": "nn_norm",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/norm",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_euclidean_norm",
+    "category": "nn_norm",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/norm",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_gemma_rms_norm",
+    "category": "nn_norm",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/norm",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_group_norm_grad",
+    "category": "nn_norm",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/norm",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_group_norm_silu",
+    "category": "nn_norm",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/norm",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_group_norm_silu_quant",
+    "category": "nn_norm",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/norm",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_group_norm_swish",
+    "category": "nn_norm",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/norm",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_group_norm_swish_grad",
+    "category": "nn_norm",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/norm",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_group_norm_v2",
+    "category": "nn_norm",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/norm",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_inplace_add_layer_norm",
+    "category": "nn_norm",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/norm",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_inplace_add_rms_norm",
+    "category": "nn_norm",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/norm",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_instance_norm",
+    "category": "nn_norm",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/norm",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_layer_norm",
+    "category": "nn_norm",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/norm",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_layer_norm_grad",
+    "category": "nn_norm",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/norm",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_layer_norm_grad_v3",
+    "category": "nn_norm",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/norm",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_layer_norm_quant",
+    "category": "nn_norm",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/norm",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_layer_norm_v3",
+    "category": "nn_norm",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/norm",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_layer_norm_v4",
+    "category": "nn_norm",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/norm",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_lp_norm_v2",
+    "category": "nn_norm",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/norm",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_masked_softmax_with_rel_pos_bias",
+    "category": "nn_norm",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/norm",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_multi_add_rms_norm_dynamic_quant",
+    "category": "nn_norm",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/norm",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_quantize_add_layer_norm",
+    "category": "nn_norm",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/norm",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_quantized_batch_norm",
+    "category": "nn_norm",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/norm",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_renorm",
+    "category": "nn_norm",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/norm",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_rms_norm",
+    "category": "nn_norm",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/norm",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_rms_norm_dynamic_mx_quant",
+    "category": "nn_norm",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/norm",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_rms_norm_dynamic_quant",
+    "category": "nn_norm",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/norm",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_rms_norm_grad",
+    "category": "nn_norm",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/norm",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_rms_norm_grad_quant",
+    "category": "nn_norm",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/norm",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_rms_norm_quant",
+    "category": "nn_norm",
+    "difficulty": 2,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-nn/norm",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_rms_norm_quant_v2",
+    "category": "nn_norm",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/norm",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_sync_batch_norm_backward_elemt",
+    "category": "nn_norm",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/norm",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_sync_batch_norm_backward_reduce",
+    "category": "nn_norm",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/norm",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_sync_batch_norm_gather_stats",
+    "category": "nn_norm",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/norm",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_sync_batch_norm_gather_stats_fused",
+    "category": "nn_norm",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/norm",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_sync_bn_training_update",
+    "category": "nn_norm",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/norm",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_adaptive_avg_pool2d",
+    "category": "nn_pooling",
+    "difficulty": 2,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-nn/pooling",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_adaptive_avg_pool3d",
+    "category": "nn_pooling",
+    "difficulty": 2,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-nn/pooling",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_adaptive_avg_pool3d_grad",
+    "category": "nn_pooling",
+    "difficulty": 2,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-nn/pooling",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_adaptive_max_pool2d",
+    "category": "nn_pooling",
+    "difficulty": 2,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-nn/pooling",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_adaptive_max_pool3d",
+    "category": "nn_pooling",
+    "difficulty": 2,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-nn/pooling",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_adaptive_max_pool3d_grad",
+    "category": "nn_pooling",
+    "difficulty": 2,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-nn/pooling",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_avg_pool",
+    "category": "nn_pooling",
+    "difficulty": 2,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-nn/pooling",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_avg_pool3_d",
+    "category": "nn_pooling",
+    "difficulty": 2,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-nn/pooling",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_avg_pool3_d_grad",
+    "category": "nn_pooling",
+    "difficulty": 2,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-nn/pooling",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_avg_pool_grad",
+    "category": "nn_pooling",
+    "difficulty": 2,
+    "description": "avg_pool_grad",
+    "source": "cann-ops-nn/pooling",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_avg_pool_v2",
+    "category": "nn_pooling",
+    "difficulty": 2,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-nn/pooling",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_avg_pool_v2_grad",
+    "category": "nn_pooling",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/pooling",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_max_pool3_d",
+    "category": "nn_pooling",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/pooling",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_max_pool3d_grad",
+    "category": "nn_pooling",
+    "difficulty": 2,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-nn/pooling",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_max_pool3d_grad_with_argmax",
+    "category": "nn_pooling",
+    "difficulty": 2,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-nn/pooling",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_max_pool3d_with_argmax_v2",
+    "category": "nn_pooling",
+    "difficulty": 2,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-nn/pooling",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_max_pool_grad",
+    "category": "nn_pooling",
+    "difficulty": 2,
+    "description": "max_pool_grad",
+    "source": "cann-ops-nn/pooling",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_max_pool_grad_with_argmax",
+    "category": "nn_pooling",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/pooling",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_max_pool_grad_with_argmax_v3",
+    "category": "nn_pooling",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/pooling",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_max_pool_v2",
+    "category": "nn_pooling",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/pooling",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_max_pool_v3",
+    "category": "nn_pooling",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/pooling",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_max_pool_with_argmax",
+    "category": "nn_pooling",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/pooling",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_max_pool_with_argmax_v3",
+    "category": "nn_pooling",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/pooling",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_adam_apply_one_assign",
+    "category": "nn_optim",
+    "difficulty": 2,
+    "description": "| 产品                                              | 是否支持 |",
+    "source": "cann-ops-nn/optim",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_advance_step",
+    "category": "nn_optim",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/optim",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_apply_adadelta",
+    "category": "nn_optim",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/optim",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_apply_adam_w_quant",
+    "category": "nn_optim",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/optim",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_apply_adam_w_v2",
+    "category": "nn_optim",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/optim",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_apply_adam_with_amsgrad_v2",
+    "category": "nn_optim",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/optim",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_apply_adamax",
+    "category": "nn_optim",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/optim",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_apply_add_sign",
+    "category": "nn_optim",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/optim",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_apply_centered_rms_prop",
+    "category": "nn_optim",
+    "difficulty": 2,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-nn/optim",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_apply_ftrl_v2",
+    "category": "nn_optim",
+    "difficulty": 2,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-nn/optim",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_apply_fused_ema_adam",
+    "category": "nn_optim",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/optim",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_apply_keras_momentum",
+    "category": "nn_optim",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/optim",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_apply_proximal_adagrad",
+    "category": "nn_optim",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/optim",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_apply_proximal_gradient_descent",
+    "category": "nn_optim",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/optim",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_apply_rms_prop",
+    "category": "nn_optim",
+    "difficulty": 2,
+    "description": "<!--",
+    "source": "cann-ops-nn/optim",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_fused_sgd",
+    "category": "nn_optim",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/optim",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_lamb_apply_optimizer_assign",
+    "category": "nn_optim",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/optim",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_lamb_apply_weight_assign",
+    "category": "nn_optim",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/optim",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_lamb_next_m_v",
+    "category": "nn_optim",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/optim",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_lamb_next_m_v_with_decay",
+    "category": "nn_optim",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/optim",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_lamb_next_right",
+    "category": "nn_optim",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/optim",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_lamb_update_with_lr",
+    "category": "nn_optim",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/optim",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_lamb_update_with_lr_v2",
+    "category": "nn_optim",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/optim",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_sparse_apply_adadelta",
+    "category": "nn_optim",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/optim",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_sparse_apply_ftrl_v2",
+    "category": "nn_optim",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/optim",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_sparse_apply_proximal_adagrad",
+    "category": "nn_optim",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/optim",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_sparse_apply_rms_prop",
+    "category": "nn_optim",
+    "difficulty": 2,
+    "description": "<!-- Generated By CANNBot -->",
+    "source": "cann-ops-nn/optim",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_acts_ulq",
+    "category": "nn_quant",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/quant",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_anti_mx_quant",
+    "category": "nn_quant",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/quant",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_ascend_anti_quant_v2",
+    "category": "nn_quant",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/quant",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_ascend_quant",
+    "category": "nn_quant",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/quant",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_ascend_quant_v2",
+    "category": "nn_quant",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/quant",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_dequant_bias",
+    "category": "nn_quant",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/quant",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_dequant_swiglu_quant",
+    "category": "nn_quant",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/quant",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_dynamic_block_mx_quant",
+    "category": "nn_quant",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/quant",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_dynamic_block_quant",
+    "category": "nn_quant",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/quant",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_dynamic_dual_level_mx_quant",
+    "category": "nn_quant",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/quant",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_dynamic_mx_quant",
+    "category": "nn_quant",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/quant",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_dynamic_mx_quant_with_dual_axis",
+    "category": "nn_quant",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/quant",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_dynamic_quant",
+    "category": "nn_quant",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/quant",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_dynamic_quant_update_scatter",
+    "category": "nn_quant",
+    "difficulty": 2,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-nn/quant",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_dynamic_quant_update_scatter_v2",
+    "category": "nn_quant",
+    "difficulty": 2,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-nn/quant",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_dynamic_quant_v2",
+    "category": "nn_quant",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/quant",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_fake_quant_affine_cachemask",
+    "category": "nn_quant",
+    "difficulty": 2,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-nn/quant",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_fake_quant_with_min_max_vars",
+    "category": "nn_quant",
+    "difficulty": 2,
+    "description": "fake_quant_with_min_max_vars",
+    "source": "cann-ops-nn/quant",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_fake_quant_with_min_max_vars_per_channel",
+    "category": "nn_quant",
+    "difficulty": 2,
+    "description": "fake_quant_with_min_max_vars_per_channel",
+    "source": "cann-ops-nn/quant",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_fake_quant_with_min_max_vars_per_channel_gradient",
+    "category": "nn_quant",
+    "difficulty": 2,
+    "description": "fake_quant_with_min_max_vars_per_channel_gradient",
+    "source": "cann-ops-nn/quant",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_flat_quant",
+    "category": "nn_quant",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/quant",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_group_quant",
+    "category": "nn_quant",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/quant",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_grouped_dynamic_block_quant",
+    "category": "nn_quant",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/quant",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_grouped_dynamic_mx_quant",
+    "category": "nn_quant",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/quant",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_grouped_quant_max",
+    "category": "nn_quant",
+    "difficulty": 2,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-nn/quant",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_ifmr",
+    "category": "nn_quant",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/quant",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_quant_max",
+    "category": "nn_quant",
+    "difficulty": 2,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-nn/quant",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_quantize",
+    "category": "nn_quant",
+    "difficulty": 2,
+    "description": "[📄 查看源码](https://gitcode.com/cann/ops-nn/tree/master/quant/quantize)",
+    "source": "cann-ops-nn/quant",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_swi_glu_quant",
+    "category": "nn_quant",
+    "difficulty": 2,
+    "description": "| 产品                                                         |  是否支持   |",
+    "source": "cann-ops-nn/quant",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_swiglu_backward_mx_quant_with_dual_axis",
+    "category": "nn_quant",
+    "difficulty": 2,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-nn/quant",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_swiglu_mx_quant",
+    "category": "nn_quant",
+    "difficulty": 2,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-nn/quant",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_swiglu_mx_quant_with_dual_axis",
+    "category": "nn_quant",
+    "difficulty": 2,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-nn/quant",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_trans_quant_param_v2",
+    "category": "nn_quant",
+    "difficulty": 2,
+    "description": "| 产品                                                         |  是否支持   |",
+    "source": "cann-ops-nn/quant",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_bidirection_lstm",
+    "category": "nn_rnn",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/rnn",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_bidirection_lstmv2",
+    "category": "nn_rnn",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/rnn",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_dynamic_rnn",
+    "category": "nn_rnn",
+    "difficulty": 2,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-nn/rnn",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_dynamic_rnnv2",
+    "category": "nn_rnn",
+    "difficulty": 2,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-nn/rnn",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_gru",
+    "category": "nn_rnn",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/rnn",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_single_layer_lstm_grad",
+    "category": "nn_rnn",
+    "difficulty": 2,
+    "description": "| 产品                                                                            | 是否支持 |",
+    "source": "cann-ops-nn/rnn",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_thnn_fused_lstm_cell",
+    "category": "nn_rnn",
+    "difficulty": 2,
+    "description": "| 产品                                                                            | 是否支持 |",
+    "source": "cann-ops-nn/rnn",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_thnn_fused_lstm_cell_grad",
+    "category": "nn_rnn",
+    "difficulty": 2,
+    "description": "| 产品                                                                            | 是否支持 |",
+    "source": "cann-ops-nn/rnn",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_apply_top_k_top_p_with_sorted",
+    "category": "nn_index",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/index",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_broadcast_gradient_args",
+    "category": "nn_index",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/index",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_bucketize_v2",
+    "category": "nn_index",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/index",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_concat_offset",
+    "category": "nn_index",
+    "difficulty": 2,
+    "description": "concat_offset",
+    "source": "cann-ops-nn/index",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_data_format_dim_map",
+    "category": "nn_index",
+    "difficulty": 2,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-nn/index",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_embedding",
+    "category": "nn_index",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/index",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_embedding_bag",
+    "category": "nn_index",
+    "difficulty": 2,
+    "description": "| 产品 | 是否支持 |",
+    "source": "cann-ops-nn/index",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_embedding_dense_grad",
+    "category": "nn_index",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/index",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_embedding_dense_grad_v2",
+    "category": "nn_index",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/index",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_expand_into_jagged_permute",
+    "category": "nn_index",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/index",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_gather_elements",
+    "category": "nn_index",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/index",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_gather_elements_v2",
+    "category": "nn_index",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/index",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_gather_nd",
+    "category": "nn_index",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/index",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_gather_v2",
+    "category": "nn_index",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/index",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_index",
+    "category": "nn_index",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/index",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_index_check",
+    "category": "nn_index",
+    "difficulty": 2,
+    "description": "| 产品                                           | 是否支持 |",
+    "source": "cann-ops-nn/index",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_index_fill",
+    "category": "nn_index",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/index",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_index_fill_d",
+    "category": "nn_index",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/index",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_index_put_v2",
+    "category": "nn_index",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/index",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_index_put_with_sort",
+    "category": "nn_index",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/index",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_index_put_with_sort_v2",
+    "category": "nn_index",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/index",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_inplace_index_add",
+    "category": "nn_index",
+    "difficulty": 2,
+    "description": "inplace_index_add",
+    "source": "cann-ops-nn/index",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_inplace_index_add_with_sorted",
+    "category": "nn_index",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/index",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_inplace_index_fill",
+    "category": "nn_index",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/index",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_inplace_scatter_add",
+    "category": "nn_index",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/index",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_linear_index",
+    "category": "nn_index",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/index",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_linear_index_v2",
+    "category": "nn_index",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/index",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_map_index",
+    "category": "nn_index",
+    "difficulty": 2,
+    "description": "本目录仅包含MapIndex算子对应的aclnn接口；如您想要贡献该算子的AscendC实现，请参考[贡献流程](../../CONTRIBUTING.md)。",
+    "source": "cann-ops-nn/index",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_masked_scatter",
+    "category": "nn_index",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/index",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_masked_scatter_with_position",
+    "category": "nn_index",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/index",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_non_zero",
+    "category": "nn_index",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/index",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_quant_update_scatter",
+    "category": "nn_index",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/index",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_repeat_interleave",
+    "category": "nn_index",
+    "difficulty": 2,
+    "description": "本目录仅包含RepeatInterleave算子对应的aclnn接口；如您想要贡献该算子的AscendC实现，请参考[贡献流程](../../CONTRIBUTING.md)。",
+    "source": "cann-ops-nn/index",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_repeat_interleave_grad",
+    "category": "nn_index",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/index",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_reverse_sequence",
+    "category": "nn_index",
+    "difficulty": 2,
+    "description": "reverse_sequence",
+    "source": "cann-ops-nn/index",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_reverse_v2",
+    "category": "nn_index",
+    "difficulty": 2,
+    "description": "本目录仅包含ReverseV2算子对应的aclnn接口；如您想要贡献该算子的AscendC实现，请参考[贡献流程](../../CONTRIBUTING.md)。",
+    "source": "cann-ops-nn/index",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_scatter",
+    "category": "nn_index",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/index",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_scatter_add",
+    "category": "nn_index",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/index",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_scatter_add_with_sorted",
+    "category": "nn_index",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/index",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_scatter_elements",
+    "category": "nn_index",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/index",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_scatter_elements_v2",
+    "category": "nn_index",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/index",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_scatter_list",
+    "category": "nn_index",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/index",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_scatter_nd",
+    "category": "nn_index",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/index",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_scatter_nd_add",
+    "category": "nn_index",
+    "difficulty": 2,
+    "description": "scatter_nd_add",
+    "source": "cann-ops-nn/index",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_scatter_nd_update",
+    "category": "nn_index",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/index",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_scatter_sub",
+    "category": "nn_index",
+    "difficulty": 2,
+    "description": "scatter_sub",
+    "source": "cann-ops-nn/index",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_scatter_update",
+    "category": "nn_index",
+    "difficulty": 2,
+    "description": "本目录仅包含ScatterUpdate算子对应的aclnn接口；如您想要贡献该算子的AscendC实现，请参考[贡献流程](../../CONTRIBUTING.md)。",
+    "source": "cann-ops-nn/index",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_segment_sum",
+    "category": "nn_index",
+    "difficulty": 2,
+    "description": "segment_sum",
+    "source": "cann-ops-nn/index",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_sorted_sparse_segment_mean_grad",
+    "category": "nn_index",
+    "difficulty": 2,
+    "description": "sorted_sparse_segment_mean_grad",
+    "source": "cann-ops-nn/index",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_sparse_segment_mean",
+    "category": "nn_index",
+    "difficulty": 2,
+    "description": "sparse_segment_mean",
+    "source": "cann-ops-nn/index",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_sparse_slice",
+    "category": "nn_index",
+    "difficulty": 2,
+    "description": "sparse_slice",
+    "source": "cann-ops-nn/index",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_sparse_to_dense",
+    "category": "nn_index",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/index",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_top_k_top_p_sample",
+    "category": "nn_index",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/index",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_top_k_top_p_sample_v2",
+    "category": "nn_index",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/index",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_unique_consecutive",
+    "category": "nn_index",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/index",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_unique_dim",
+    "category": "nn_index",
+    "difficulty": 2,
+    "description": "unique_dim",
+    "source": "cann-ops-nn/index",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_unsorted_segment_max",
+    "category": "nn_index",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/index",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_unsorted_segment_min",
+    "category": "nn_index",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/index",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_unsorted_segment_prod",
+    "category": "nn_index",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/index",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_unsorted_segment_sum",
+    "category": "nn_index",
+    "difficulty": 2,
+    "description": "| 产品                                                         | 是否支持 |",
+    "source": "cann-ops-nn/index",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_foreach_abs",
+    "category": "nn_foreach",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/foreach",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_foreach_acos",
+    "category": "nn_foreach",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/foreach",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_foreach_add_list",
+    "category": "nn_foreach",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/foreach",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_foreach_add_scalar",
+    "category": "nn_foreach",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/foreach",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_foreach_add_scalar_list",
+    "category": "nn_foreach",
+    "difficulty": 2,
+    "description": "| 产品　　　　　　　　　　　　　　　　　　　　　　　　　　 | 是否支持 |",
+    "source": "cann-ops-nn/foreach",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_foreach_addcdiv_list",
+    "category": "nn_foreach",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/foreach",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_foreach_addcdiv_scalar",
+    "category": "nn_foreach",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/foreach",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_foreach_addcdiv_scalar_list",
+    "category": "nn_foreach",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/foreach",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_foreach_addcmul_list",
+    "category": "nn_foreach",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/foreach",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_foreach_addcmul_scalar",
+    "category": "nn_foreach",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/foreach",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_foreach_addcmul_scalar_list",
+    "category": "nn_foreach",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/foreach",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_foreach_asin",
+    "category": "nn_foreach",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/foreach",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_foreach_atan",
+    "category": "nn_foreach",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/foreach",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_foreach_copy",
+    "category": "nn_foreach",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/foreach",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_foreach_cos",
+    "category": "nn_foreach",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/foreach",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_foreach_cosh",
+    "category": "nn_foreach",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/foreach",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_foreach_div_list",
+    "category": "nn_foreach",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/foreach",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_foreach_div_scalar",
+    "category": "nn_foreach",
+    "difficulty": 2,
+    "description": "| 产品　　　　　　　　　　　　　　　　　　　　　　　　　　 | 是否支持 |",
+    "source": "cann-ops-nn/foreach",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_foreach_div_scalar_list",
+    "category": "nn_foreach",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/foreach",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_foreach_erf",
+    "category": "nn_foreach",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/foreach",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_foreach_erfc",
+    "category": "nn_foreach",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/foreach",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_foreach_exp",
+    "category": "nn_foreach",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/foreach",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_foreach_expm1",
+    "category": "nn_foreach",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/foreach",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_foreach_lerp_list",
+    "category": "nn_foreach",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/foreach",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_foreach_lerp_scalar",
+    "category": "nn_foreach",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/foreach",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_foreach_log",
+    "category": "nn_foreach",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/foreach",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_foreach_log10",
+    "category": "nn_foreach",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/foreach",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_foreach_log1p",
+    "category": "nn_foreach",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/foreach",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_foreach_log2",
+    "category": "nn_foreach",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/foreach",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_foreach_maximum_list",
+    "category": "nn_foreach",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/foreach",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_foreach_maximum_scalar",
+    "category": "nn_foreach",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/foreach",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_foreach_maximum_scalar_list",
+    "category": "nn_foreach",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/foreach",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_foreach_minimum_list",
+    "category": "nn_foreach",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/foreach",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_foreach_minimum_scalar",
+    "category": "nn_foreach",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/foreach",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_foreach_minimum_scalar_list",
+    "category": "nn_foreach",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/foreach",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_foreach_mul_list",
+    "category": "nn_foreach",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/foreach",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_foreach_mul_scalar",
+    "category": "nn_foreach",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/foreach",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_foreach_mul_scalar_list",
+    "category": "nn_foreach",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/foreach",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_foreach_neg",
+    "category": "nn_foreach",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/foreach",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_foreach_non_finite_check_and_unscale",
+    "category": "nn_foreach",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/foreach",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_foreach_norm",
+    "category": "nn_foreach",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/foreach",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_foreach_pow_list",
+    "category": "nn_foreach",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/foreach",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_foreach_pow_scalar",
+    "category": "nn_foreach",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/foreach",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_foreach_pow_scalar_and_tensor",
+    "category": "nn_foreach",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/foreach",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_foreach_pow_scalar_list",
+    "category": "nn_foreach",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/foreach",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_foreach_reciprocal",
+    "category": "nn_foreach",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/foreach",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_foreach_round_off_number",
+    "category": "nn_foreach",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/foreach",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_foreach_sigmoid",
+    "category": "nn_foreach",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/foreach",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_foreach_sign",
+    "category": "nn_foreach",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/foreach",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_foreach_sin",
+    "category": "nn_foreach",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/foreach",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_foreach_sinh",
+    "category": "nn_foreach",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/foreach",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_foreach_sqrt",
+    "category": "nn_foreach",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/foreach",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_foreach_sub_list",
+    "category": "nn_foreach",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/foreach",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_foreach_sub_scalar",
+    "category": "nn_foreach",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/foreach",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_foreach_sub_scalar_list",
+    "category": "nn_foreach",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/foreach",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_foreach_tan",
+    "category": "nn_foreach",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/foreach",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_foreach_tanh",
+    "category": "nn_foreach",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/foreach",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_foreach_zero_inplace",
+    "category": "nn_foreach",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/foreach",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_embedding_hash_table_apply_adam_w",
+    "category": "nn_hash",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/hash",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_embedding_hash_table_export",
+    "category": "nn_hash",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/hash",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_embedding_hash_table_import",
+    "category": "nn_hash",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/hash",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_embedding_hash_table_lookup_or_insert",
+    "category": "nn_hash",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/hash",
+    "has_test": false
+  },
+  {
+    "name": "cannnn_init_embedding_hash_table",
+    "category": "nn_hash",
+    "difficulty": 2,
+    "description": "|产品             |  是否支持  |",
+    "source": "cann-ops-nn/hash",
+    "has_test": false
+  }
+]
