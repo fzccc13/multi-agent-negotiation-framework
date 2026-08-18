@@ -10,7 +10,7 @@ Under a fixed logical LLM-call cap, does the negotiation workflow improve Ascend
 - Same underlying model for baseline and every negotiation role (`--homogeneous-agent`).
 - Same maximum logical LLM calls per task and mode (`--call-budget`).
 - Same CANN environment, Ascend 310B4 device, test scripts, precision threshold, and repair-round cap.
-- Fresh output directory, or explicit `--resume` from recorded checkpoints.
+- Fresh output directory, or continuation from recorded checkpoints with the CLI checkpoint option.
 
 ## Compared modes
 
@@ -48,4 +48,4 @@ A task passes only when the representative operator project compiles, executes o
 
 ## Current limitation
 
-The public repository contains only five tasks with executable representative projects. Their results are useful for end-to-end verification and failure analysis, not statistical proof. Expanding the executable set is required before adding a quantified gain to a resume.
+The public repository provides a small representative set of executable projects for end-to-end verification and failure analysis. These examples should not be treated as statistical proof. A quantified comparison should be published only after expanding the executable task set and preserving the complete raw artifacts for independent verification.
