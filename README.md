@@ -186,10 +186,6 @@ GitHub Actions 会验证：
 - 真实评测拒绝在 LLM 初始化降级为 Mock 时继续写入真实结果。
 - 快照只记录模型名、公开参数、数据哈希和环境版本。
 
-## License
-
-作者原创协议、评测和适配代码采用 MIT License。`ascend-ops-dataset/` 及 `sources/` 中的第三方材料不适用本仓库 MIT 授权，具体来源和许可见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) 与 [ascend-ops-dataset/LICENSE_DATA.md](ascend-ops-dataset/LICENSE_DATA.md)。
-
 ## Current limitations
 
 - 只有 5 个代表算子具备本仓库可直接调用的真机测试工程，无法支撑大样本统计结论。
